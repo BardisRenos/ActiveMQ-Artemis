@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  activemq:
+    image: symptoma/activemq:latest
+    container_name: 'Artemis'
+    ports:
+      - "8161:8161"
+      - "61616:61616"
+    volumes:
+      - ~/Documents/data/activemq/data:/data/activemq
+      - ~/Documents/data/activemq/log:/var/log/activemq
+    environment:
+      AMQ_USER: "admin"
+      AMQ_PASSWORD: "admin"
