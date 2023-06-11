@@ -1,6 +1,5 @@
 package com.example.ArtemisMQ.producer;
 
-import com.example.ArtemisMQ.dto.CustomerDTO;
 import com.example.ArtemisMQ.entity.Customer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
