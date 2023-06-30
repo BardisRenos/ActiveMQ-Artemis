@@ -6,17 +6,12 @@ import com.example.ArtemisMQ.entity.Customer;
 import com.example.ArtemisMQ.mapper.CustomerMapper;
 import com.example.ArtemisMQ.producer.ProduceMessage;
 import com.example.ArtemisMQ.service.Interfaces.CustomerService;
-import jakarta.jms.Destination;
-import jakarta.jms.JMSProducer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CachePut;
-import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Queue;
 import java.util.stream.Collectors;
 
 

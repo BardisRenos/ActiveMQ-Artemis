@@ -15,12 +15,12 @@ public class ProduceMessage {
     private final JmsTemplate jmsTemplate;
 
     @Value("${active-mq.topic}")
-    private String topic;
+    private String TOPIC;
 
     public void sendMessage(Customer customer) {
         try{
-            log.info("Attempting Send message to Topic: "+ topic);
-            jmsTemplate.convertAndSend(topic, customer);
+            log.info("Attempting Send message to Topic: "+ TOPIC);
+            jmsTemplate.convertAndSend(TOPIC, customer);
         } catch(Exception e) {
             log.error("Received Exception during send Message: ", e);
         }
